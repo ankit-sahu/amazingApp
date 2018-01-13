@@ -10,7 +10,7 @@ func main(){
 
 	router := mux.NewRouter()
 	router.HandleFunc("/",info).Methods("GET")
-	log.Fatal(http.ListenAndServe(":9999",router))
+	log.Fatal(http.ListenAndServe(":8080",router))
 }
 
 func info(w http.ResponseWriter, req *http.Request){
